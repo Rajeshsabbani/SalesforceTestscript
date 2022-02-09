@@ -23,7 +23,7 @@ public class LoginPom {
 	}
 	public void loginActivity()
 	{
-		userNameTxtBox.sendKeys("rajeshsabbani44-hcdg@force.com");	
+		userNameTxtBox.sendKeys("rajeshsabbani44-tjcm@force.com");	
 		passwordTxtBox.sendKeys("Rajesh@123");
 		loginBtn.click();
 		//verifiecode.sendKeys("392993");

@@ -6,6 +6,7 @@
       <class name="executerScrpt.Accountscript">
         <methods>
           <include name="AccountFunc"/>
+          <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- executerScrpt.Accountscript -->

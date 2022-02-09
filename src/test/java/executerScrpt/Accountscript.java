@@ -5,7 +5,7 @@ import genericScrpt.BaseLibray;
 import pom_sales.Home_Page;
 import pom_sales.LoginPom;
 import pom_sales.AccountsPOM;
-import pom_sales.DemoaccountPOM;
+
 public class Accountscript extends BaseLibray{
 	@Test
 	public void AccountFunc() throws InterruptedException

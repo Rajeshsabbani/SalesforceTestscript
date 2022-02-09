@@ -7,15 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Home_Page {
 	
-	@FindBy(xpath = "//one-app-nav-bar-menu-button[1][@class='slds-dropdown-trigger slds-dropdown-trigger--click']")
+	@FindBy(xpath = "//a[@title='Accounts']//parent::a/..")//one-app-nav-bar-menu-button[1][@class='slds-dropdown-trigger slds-dropdown-trigger--click']
 	private WebElement accountsBtn;
-	@FindBy (xpath = "//one-app-nav-bar-item-root[@data-id='Contact']//one-app-nav-bar-menu-button[@class='slds-dropdown-trigger slds-dropdown-trigger--click']")
+	@FindBy (xpath = "//span[text()='Contacts']//parent::a/..")
 	private WebElement contactsBtn;
-	@FindBy(xpath = "//one-app-nav-bar-item-root[@data-id='Opportunity']//a[@role='button']//lightning-primitive-icon")
+	@FindBy(xpath = "//span[text()='Opportunities']//parent::a/..")
 	private WebElement opportunitiesBtn;
-	@FindBy (xpath = "//one-app-nav-bar-item-root[@class='navItem slds-context-bar__item slds-shrink-none slds-is-active']//a[@role='button']")
+	@FindBy (xpath = "//span[text()='Tasks']//parent::a/..")//a[@role='button'])[6]//parent::one-app-nav-bar-menu-button/.")
 	private WebElement TasksBtn;
-	@FindBy (xpath = "//one-app-nav-bar-menu-button[@class='slds-dropdown-trigger slds-dropdown-trigger--click slds-is-open']")
+	@FindBy (xpath = "//span[text()='Notes']//parent::a/..")
 	private WebElement NotesBtn;
 	
 	public Home_Page(WebDriver driver)
