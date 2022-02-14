@@ -17,10 +17,10 @@ public class OpportunitiesPOM {
 	private WebElement selectByVisibleText;
 	@FindBy (xpath = "(//input[@class='slds-input'])[3]")
 	private WebElement closeDate;
-	@FindBy (xpath = "(//input[@aria-haspopup='listbox'])[4]//parent::div/..")
+	@FindBy (xpath = "//label[text()='Stage']/..//button")//input[@aria-haspopup='listbox'])[4]//parent::div/..")
 	private WebElement stageDropdown;
-	//@FindBy (id = "(//lightning-base-combobox-item[@role='option'])[1]//parent::div/..")
-	//private WebElement selectByVisiblestage;
+	@FindBy (xpath = "//span[@title='Qualification']/../..")//lightning-combobox[@class='slds-form-element slds-form-element_horizontal slds-has-error']//div[@role='listbox']//child::lightning-base-combobox-item[2]//child::span)[3]")
+	private WebElement selectByVisiblestage;
 	@FindBy (xpath = "//button[@name='SaveEdit']")
 	private WebElement saveBtn;
 
@@ -29,15 +29,17 @@ public class OpportunitiesPOM {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void creatNewopportunity()
+	public void creatNewopportunity() 
 	{
 		newOpportunitie.click();
 		opportunityName.sendKeys("Tata Service");
 		accountNameTxtBox.sendKeys("Mi");
 		selectByVisibleText.click();
+		System.out.println("suggestion text selected");
 		closeDate.sendKeys("2/3/2022");
 		stageDropdown.click();
-		//selectByVisiblestage.click();
+		System.out.println("stage dropdown clicked");
+		selectByVisiblestage.click();
 		saveBtn.click();
 		System.out.println("Saved");
 	}

@@ -31,6 +31,7 @@ public class ContactsPOM {
 		lastName.sendKeys("Microsoft");
 		accountNameTxtBox.sendKeys("Mi");
 		selectByVisibleText.click();
+		System.out.println("Visible text selected");
 		saveBtn.click();
 		System.out.println("saved");
 	}
