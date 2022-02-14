@@ -7,7 +7,7 @@
   <class name="executerScrpt.Accountscript"/>
   </classes>
  </test>
-  <!-- <test name="test2">
+  <test name="test2">
   <parameter name="browser" value="chrome" />
   <classes>
  <class name="executerScrpt.Contactscript"/>
@@ -30,5 +30,5 @@
   <classes>
  <class name="executerScrpt.Notescript"/>
  </classes>
-  </test>-->
+  </test>
 </suite>
