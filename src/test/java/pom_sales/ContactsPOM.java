@@ -12,9 +12,9 @@ public class ContactsPOM {
 	private WebElement newContact;
 	@FindBy(xpath = "//input[@name='lastName']")
 	private WebElement lastName;
-	@FindBy (xpath = "(//input[@aria-haspopup='listbox'])[3]")
+	@FindBy (xpath = "(//input[@aria-haspopup='listbox'])[2]")
 	private WebElement accountNameTxtBox;
-	@FindBy (xpath = "//ul[@aria-label='Recent Accounts']//child::li[3]")
+	@FindBy (xpath = "(//ul[@role='group'])//child::li[1]")
 	private WebElement selectByVisibleText;
 	@FindBy (xpath = "//button[@name='SaveEdit']")
 	private WebElement saveBtn;
@@ -29,7 +29,7 @@ public class ContactsPOM {
 		//Accountsdropdown.click();
 		newContact.click();	
 		lastName.sendKeys("Microsoft");
-		accountNameTxtBox.sendKeys("Mi");
+		accountNameTxtBox.sendKeys("Microsoft");
 		selectByVisibleText.click();
 		System.out.println("Visible text selected");
 		saveBtn.click();

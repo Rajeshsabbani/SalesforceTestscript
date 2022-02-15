@@ -13,13 +13,13 @@ public class OpportunitiesPOM {
 	private WebElement opportunityName;
 	@FindBy (xpath = "(//input[@aria-haspopup='listbox'])[2]")
 	private WebElement accountNameTxtBox;
-	@FindBy (xpath = "//ul[@aria-label='Recent Accounts']//child::li[2]")
+	@FindBy (xpath = "(//ul[@role='group'])//child::li[1]")
 	private WebElement selectByVisibleText;
 	@FindBy (xpath = "(//input[@class='slds-input'])[3]")
 	private WebElement closeDate;
-	@FindBy (xpath = "//label[text()='Stage']/..//button")//input[@aria-haspopup='listbox'])[4]//parent::div/..")
+	@FindBy (xpath = "//label[text()='Stage']/..//button")
 	private WebElement stageDropdown;
-	@FindBy (xpath = "//span[@title='Qualification']/../..")//lightning-combobox[@class='slds-form-element slds-form-element_horizontal slds-has-error']//div[@role='listbox']//child::lightning-base-combobox-item[2]//child::span)[3]")
+	@FindBy (xpath = "//span[@title='Qualification']/../..")
 	private WebElement selectByVisiblestage;
 	@FindBy (xpath = "//button[@name='SaveEdit']")
 	private WebElement saveBtn;
@@ -32,8 +32,8 @@ public class OpportunitiesPOM {
 	public void creatNewopportunity() 
 	{
 		newOpportunitie.click();
-		opportunityName.sendKeys("Tata Service");
-		accountNameTxtBox.sendKeys("Mi");
+		opportunityName.sendKeys("Microsoft");
+		accountNameTxtBox.sendKeys("Microsoft");
 		selectByVisibleText.click();
 		System.out.println("suggestion text selected");
 		closeDate.sendKeys("2/3/2022");

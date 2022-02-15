@@ -7,25 +7,25 @@
   <class name="executerScrpt.Accountscript"/>
   </classes>
  </test>
-  <test name="test2">
+ <test name="test2">
   <parameter name="browser" value="chrome" />
   <classes>
  <class name="executerScrpt.Contactscript"/>
  </classes>
-  </test> 
-   <test name="test3">
+  </test>
+<test name="test3">
   <parameter name="browser" value="chrome" />
   <classes>
  <class name="executerScrpt.Opportunitiescript"/>
  </classes>
   </test>
- <test name="test4">
+  <test name="test4">
   <parameter name="browser" value="chrome" />
   <classes>
  <class name="executerScrpt.Taskscript"/>
  </classes>
   </test>
-  <test name="test5">
+   <test name="test5">
   <parameter name="browser" value="chrome" />
   <classes>
  <class name="executerScrpt.Notescript"/>
